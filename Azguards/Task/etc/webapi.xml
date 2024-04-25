@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Api/etc/webapi.xsd">
+    <route url="/V1/set-product-type" method="POST">
+        <service class="Azguards\Task\Api\ProductTypeManagementInterface" method="setProductType"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+</routes>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Azguards\Task\Api\ProductTypeManagementInterface" type="Azguards\Task\Model\ProductTypeManagement"/>
+
+     <type name="Magento\Catalog\Block\Product\View\Gallery">
+        <plugin name="change_product_image_url" type="Azguards\Task\Plugin\ChangeProductImageUrl" sortOrder="10"/>
+    </type>
+
+</config>
